@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Transcriptor de Audio</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <div class="container">
+    <h1>Transcripción de Audio</h1>
+    <p>Sube un archivo de audio para obtener su transcripción.</p>
+    <input type="file" id="audioFile" accept="audio/*">
+    <button onclick="transcribirAudio()">Transcribir Audio</button>
+    <div id="loader" class="loader" style="display: none;"></div>
+    <p id="resultado"></p>
+  </div>
+</body>
+</html>
